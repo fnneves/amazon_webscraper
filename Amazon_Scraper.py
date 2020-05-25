@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 22 02:10:09 2020
-
-@author: Fábio
-"""
 import requests
 from glob import glob
 from bs4 import BeautifulSoup
