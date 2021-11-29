@@ -113,7 +113,7 @@ def search_product_list(interval_count = 1, interval_hours = 6):
         print('end of interval '+ str(interval))
     
     # after the run, checks last search history record, and appends this run results to it, saving a new file
-    last_search = glob('C:/Users/Fábio/Documents/Python Projects/202005 Amazon Webscraper/search_history/*.xlsx')[-1] # path to file in the folder
+    last_search = glob('./search_history/*.xlsx')[-1] # path to file in the folder
     search_hist = pd.read_excel(last_search)
     final_df = search_hist.append(tracker_log, sort=False)
     
